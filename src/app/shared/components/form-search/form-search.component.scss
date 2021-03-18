@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url(../webfonts/fa-solid-900.eot);
+}
+
+.fa {
+  font-family: "Font Awesome 5 Free";
+}
+
+.search-bar {
+  &__input {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  &__button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: #ccc;
+    }
+  }
+}

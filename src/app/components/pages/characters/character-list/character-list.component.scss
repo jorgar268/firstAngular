@@ -1,0 +1,149 @@
+a {
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.dontFind {
+  margin-left: 40%;
+  margin-top: 45px;
+  text-align: center;
+  padding-top: 7px;
+  opacity: 0.8;
+  border-radius: 60%;
+
+  width: 100px;
+  height: 70px;
+  background-color: #ffc6ff;
+  position: relative;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@keyframes loading {
+  0% {
+    background-color: #ffc6ff;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: #bdb2ff;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: #a0c4ff;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: #9bf6ff;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: #ffc6ff;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.separation {
+  height: 150px;
+}
+.characters {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+
+  // margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.characters li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #eee;
+  margin: 0.5em;
+  padding: 0.3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.characters li:hover {
+  color: #024911;
+  background-color: #e6e6e6;
+  left: 0.1em;
+}
+.characters li.selected {
+  background-color: black;
+  color: white;
+}
+.characters li.selected:hover {
+  background-color: #505050;
+  color: white;
+}
+.characters li.selected:active {
+  background-color: black;
+  color: white;
+}
+.characters .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #40614a;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: 0.8em;
+  border-radius: 4px 0 0 4px;
+}
+
+input {
+  padding: 0.5rem;
+}
+// COOL BTN
+.button {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #40614a;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\2191";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

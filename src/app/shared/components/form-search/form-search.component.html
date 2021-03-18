@@ -1,0 +1,11 @@
+<div class="search-bar">
+  <input
+    #inputSearch
+    autofocus
+    type="text"
+    class="search-bar__input"
+    placeholder="Buscar...."
+    (keyup)="onSearch(inputSearch.value)"
+  />
+  <button class="search-bar__button"><i class="fa fa-search"></i></button>
+</div>
