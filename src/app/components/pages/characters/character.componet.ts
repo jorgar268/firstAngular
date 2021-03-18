@@ -1,4 +1,4 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Character } from './../../../shared/interfaces/character.interface';
 
 @Component({
@@ -30,6 +30,7 @@ import { Character } from './../../../shared/interfaces/character.interface';
     </div>`,
   styleUrls: ['./character.component.scss'],
 })
+//he tenido que tirar de bootstrap ya que borré el html y css y ya no supe arreglarlo
 export class CharacterComponent {
   @Input() character?: Character; //Comunicación entre componentes
 }
